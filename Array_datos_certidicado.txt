@@ -1,0 +1,119 @@
+Contenido Completo de $certData
+
+Array
+(
+    [name] => /C=ES/ST=Andaluc\xC3\x83\xC2\xADa/L=Almeria/O=VeraInformatic/OU=Usuarios/CN=JuanLuis/emailAddress=jsansan135c@g.educaand.es
+    [subject] => Array
+        (
+            [C] => ES
+            [ST] => AndalucÃ­a
+            [L] => Almeria
+            [O] => VeraInformatic
+            [OU] => Usuarios
+            [CN] => JuanLuis
+            [emailAddress] => jsansan135c@g.educaand.es
+        )
+
+    [hash] => 8686e7da
+    [issuer] => Array
+        (
+            [C] => ES
+            [ST] => AndalucÃ­a
+            [L] => Almeria
+            [O] => VeraInformatic
+            [OU] => SAD
+            [CN] => CA-JLS
+            [emailAddress] => jsansan135c@g.educaand.es
+        )
+
+    [version] => 2
+    [serialNumber] => 0x4E20F50351F762FA5A2DE48223C0C8FEF1DDC335
+    [serialNumberHex] => 4E20F50351F762FA5A2DE48223C0C8FEF1DDC335
+    [validFrom] => 241206111843Z
+    [validTo] => 251206111843Z
+    [validFrom_time_t] => 1733483923
+    [validTo_time_t] => 1765019923
+    [signatureTypeSN] => RSA-SHA256
+    [signatureTypeLN] => sha256WithRSAEncryption
+    [signatureTypeNID] => 668
+    [purposes] => Array
+        (
+            [1] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => sslclient
+                )
+
+            [2] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => sslserver
+                )
+
+            [3] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => nssslserver
+                )
+
+            [4] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => smimesign
+                )
+
+            [5] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => smimeencrypt
+                )
+
+            [6] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => crlsign
+                )
+
+            [7] => Array
+                (
+                    [0] => 1
+                    [1] => 1
+                    [2] => any
+                )
+
+            [8] => Array
+                (
+                    [0] => 1
+                    [1] => 
+                    [2] => ocsphelper
+                )
+
+            [9] => Array
+                (
+                    [0] => 
+                    [1] => 
+                    [2] => timestampsign
+                )
+
+            [10] => Array
+                (
+                    [0] => 
+                    [1] => 
+                    [2] => codesign
+                )
+
+        )
+
+    [extensions] => Array
+        (
+            [subjectKeyIdentifier] => 82:B6:58:97:44:C3:97:43:3E:A0:E4:B6:78:CB:C9:0A:84:53:77:ED
+            [authorityKeyIdentifier] => 4C:C8:00:47:5E:D7:17:FD:AD:D9:36:62:10:85:A8:B7:02:DE:03:30
+        )
+
+)

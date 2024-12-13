@@ -1,3 +1,4 @@
+#Copia de seguridad de mi fichero practicapki
 # Entramos desde la  ruta: https://localhost/
 server {
     listen 8080;

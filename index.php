@@ -1,5 +1,5 @@
 <?php 
-    $log_file = '/var/log/user_access.log'; 
+    $log_file = '/var/www/practicapki/html/admin/user_access.log'; 
     if (!file_exists($log_file)) { 
     echo "No hay registros disponibles."; 
     exit; 

@@ -94,9 +94,8 @@ if (isset($certData['extensions'])) {
     renderTable($certData['extensions'], "Extensiones");
 }
 echo "<h1>Contenido Completo de \$certData</h1>";
-echo "<pre>";
-print_r($certData);
-echo "</pre>";
+print($certData);
+
 
 
 // Mostrar información del certificado
@@ -110,15 +109,17 @@ foreach ($certData as $key => $value) {
     echo "<tr><td>$key</td><td>$value</td></tr>";
 }
 echo "</table>";
-
 ?>
 
 
 <?php 
 //Modificar la web principal para registrar accesos:
-$user = $_SERVER['SSL_CLIENT_S_DN_CN']; // Nombre del cliente $email = $_SERVER['SSL_CLIENT_S_DN_Email']; // Correo del cliente $ip = $_SERVER['REMOTE_ADDR']; // IP del cliente 
-$timestamp = date("Y-m-d H:i:s"); // Fecha y hora actuales $log_entry = "$timestamp, $user, $email, $ip\n"; 
-file_put_contents('/var/log/user_access.log', $log_entry, FILE_APPEND);
+$user = $certData['subject']['CN']; // Nombre del cliente 
+$email = $certData['subject']['emailAddress']; // Correo del cliente 
+$ip = $_SERVER['REMOTE_ADDR']; // IP del cliente 
+$timestamp = date("Y-m-d H:i:s"); // Fecha y hora actuales 
+$log_entry = "$timestamp, $user, $email, $ip\n"; 
+file_put_contents('/var/www/practicapki/html/admin/user_access.log', $log_entry, FILE_APPEND);
 ?> 
 
 </body>
